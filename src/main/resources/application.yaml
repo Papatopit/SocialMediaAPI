@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SocialMediaApiApplication
+  datasource:
+    url: jdbc:postgresql://localhost:5432/socialMedia
+    username: postgres
+    password: 123
+    driverClassName: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL10Dialect
+  mvc:
+    view:
+      prefix: /templates/
